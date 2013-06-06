@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{do_sqlserver-tinytds}
-  s.version = "0.10.8"
+  s.version = "0.10.13"
   #s.platform = Gem::Platform::CURRENT
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
@@ -83,20 +83,20 @@ Gem::Specification.new do |s|
     s.specification_version = 1
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('0.9.0') then
-      s.add_runtime_dependency(%q<data_objects>, ["= 0.10.7"])
+      s.add_runtime_dependency(%q<data_objects>, ["= 0.10.13"])
       s.add_dependency(%q<tiny_tds> , ["~> 0.5"])
       s.add_development_dependency(%q<ruby-debug19>)
       s.add_development_dependency(%q<rspec>, ["~> 2.5"])
       s.add_development_dependency(%q<rake-compiler>, ["~> 0.7"])
     else
-      s.add_dependency(%q<data_objects>, ["= 0.10.7"])
+      s.add_dependency(%q<data_objects>, ["= 0.10.13"])
       s.add_dependency(%q<tiny_tds> , ["~> 0.5"])
       s.add_development_dependency(%q<ruby-debug19>)
       s.add_dependency(%q<rspec>, ["~> 2.5"])
       s.add_dependency(%q<rake-compiler>, ["~> 0.7"])
     end
   else
-    s.add_dependency(%q<data_objects>, ["= 0.10.7"])
+    s.add_dependency(%q<data_objects>, ["= 0.10.13"])
     s.add_dependency(%q<tiny_tds> , ["~> 0.5"])
     s.add_development_dependency(%q<ruby-debug19>)
     s.add_dependency(%q<rspec>, ["~> 2.5"])
