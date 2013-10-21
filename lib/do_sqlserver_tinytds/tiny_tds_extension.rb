@@ -84,7 +84,7 @@ module TinyTds
     def sql_stringify_value(value)
       case
         when value.is_a?(String)
-          "N'#{value}'"
+          "N'#{value.gsub(/\'/, "''")}'"
         when value.is_a?(Numeric)
           value.to_s
         when value.is_a?(NilClass)
